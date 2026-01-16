@@ -91,7 +91,7 @@ Accuracy alone is insufficient to assess model reliability under distribution sh
 | Accuracy                                       | Confidence                                            | Entropy                                            |
 | ---------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
 | ![](figures/accuracy_vs_severity_lowlight.png) | ![](figures/mean_confidence_vs_severity_lowlight.png) | ![](figures/mean_entropy_vs_severity_lowlight.png) |
-#### Low-light causes genuine epistemic uncertainty.
+#### Low-Light causes genuine epistemic uncertainty.
 ### Snow
 | Accuracy                                   | Confidence                                        | Entropy                                        |
 | ------------------------------------------ | ------------------------------------------------- | ---------------------------------------------- |
