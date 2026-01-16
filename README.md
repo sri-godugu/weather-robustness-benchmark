@@ -7,17 +7,7 @@ Measure how a standard CNN’s performance + confidence changes as weather-like 
 3. failure examples grid
 4. short "takeaways" section
 
-### Accuracy under Blur
-![Blur Accuracy](figures/accuracy_vs_severity_blur.png)
-
-### Accuracy under Fog
-![Blur Accuracy](figures/accuracy_vs_severity_fog.png)
-
-### Accuracy under Lowlight
-![Blur Accuracy](figures/accuracy_vs_severity_lowlight.png)
-
-### Accuracy under Rain
-![Blur Accuracy](figures/accuracy_vs_severity_rain.png)
-
-### Accuracy under Snow
-![Blur Accuracy](figures/accuracy_vs_severity_snow.png)
+### Blur
+| Accuracy                                   | Confidence                                        | Entropy                                        |
+| ------------------------------------------ | ------------------------------------------------- | ---------------------------------------------- |
+| ![](figures/accuracy_vs_severity_blur.png) | ![](figures/mean_confidence_vs_severity_blur.png) | ![](figures/mean_entropy_vs_severity_blur.png) |
