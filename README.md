@@ -19,7 +19,7 @@ Training: Standard supervised training on clean images only
 
 Evaluation: Test-time corruption without retraining
 
-# Weather-like Corruptions
+## Weather-like Corruptions
 
 Applied five corruption types, each at five severity levels:
 
@@ -47,8 +47,8 @@ Mean Entropy: Average predictive entropy (model uncertainty)
 
 This allows us to distinguish between incorrect but uncertain vs. incorrect and overconfident behavior.
 
-## Results
-# Robustness Trends
+# Results
+## Robustness Trends
 
 Accuracy degrades nonlinearly with severity across all corruption types, but the failure modes differ significantly:
 
@@ -62,7 +62,7 @@ Low-Light: Triggers sharp entropy increases and confidence collapse, reflecting 
 
 Snow: Remains robust until high severity, after which performance drops abruptly.
 
-Confidence–Entropy Mismatch
+## Confidence–Entropy Mismatch
 
 In several cases (notably blur and rain), confidence remains high even as accuracy degrades, indicating overconfident failures. This behavior is particularly dangerous in safety-critical systems, where confidence is often used for downstream decision-making.
 
