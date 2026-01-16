@@ -39,11 +39,11 @@ These corruptions simulate real-world adverse sensing conditions commonly encoun
 
 For each corruption and severity level, we report:
 
-Accuracy: Classification correctness
+Accuracy: Classification correctness (How often is the model correct?)
 
-Mean Confidence: Average maximum softmax probability
+Mean Confidence: Average maximum softmax probability (How confident the model is in the class it predicts?)
 
-Mean Entropy: Average predictive entropy (model uncertainty)
+Mean Entropy: Average predictive entropy (How uncertain the model is across all classes?)
 
 This allows us to distinguish between incorrect but uncertain vs. incorrect and overconfident behavior.
 
@@ -74,22 +74,27 @@ Accuracy alone is insufficient to assess model reliability under distribution sh
 | Accuracy                                   | Confidence                                        | Entropy                                        |
 | ------------------------------------------ | ------------------------------------------------- | ---------------------------------------------- |
 | ![](figures/accuracy_vs_severity_blur.png) | ![](figures/mean_confidence_vs_severity_blur.png) | ![](figures/mean_entropy_vs_severity_blur.png) |
+#### Blur causes early feature destruction, followed by overconfident failure, not graceful degradation.
 ### Fog
 | Accuracy                                  | Confidence                                       | Entropy                                       |
 | ----------------------------------------- | ------------------------------------------------ | --------------------------------------------- |
 | ![](figures/accuracy_vs_severity_fog.png) | ![](figures/mean_confidence_vs_severity_fog.png) | ![](figures/mean_entropy_vs_severity_fog.png) |
+#### Fog induces honest uncertainty, not hallucination.
 ### Rain
 | Accuracy                                   | Confidence                                        | Entropy                                        |
 | ------------------------------------------ | ------------------------------------------------- | ---------------------------------------------- |
 | ![](figures/accuracy_vs_severity_rain.png) | ![](figures/mean_confidence_vs_severity_rain.png) | ![](figures/mean_entropy_vs_severity_rain.png) |
+#### Rain corrupts appearance but not semantic structure.
 ### Low-Light
 | Accuracy                                       | Confidence                                            | Entropy                                            |
 | ---------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
 | ![](figures/accuracy_vs_severity_lowlight.png) | ![](figures/mean_confidence_vs_severity_lowlight.png) | ![](figures/mean_entropy_vs_severity_lowlight.png) |
+#### Low-light causes genuine epistemic uncertainty.
 ### Snow
 | Accuracy                                   | Confidence                                        | Entropy                                        |
 | ------------------------------------------ | ------------------------------------------------- | ---------------------------------------------- |
 | ![](figures/accuracy_vs_severity_snow.png) | ![](figures/mean_confidence_vs_severity_snow.png) | ![](figures/mean_entropy_vs_severity_snow.png) |
+#### Snow introduces structured occlusions but preserves edges.
 
 # Takeaways
 
